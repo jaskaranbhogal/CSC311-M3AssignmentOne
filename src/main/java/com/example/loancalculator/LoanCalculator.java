@@ -1,6 +1,7 @@
 package com.example.loancalculator;
 
 import javafx.application.Application;
+import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -59,7 +60,7 @@ public class LoanCalculator extends Application {
         pane.add(totalPaymentField, 1, 4);
 
         pane.add(calculateButton, 1, 5);
-        calculateButton.setMaxWidth(Double.MAX_VALUE);
+        GridPane.setHalignment(calculateButton, HPos.RIGHT);
 
         // Event-driven programming:
         // This code runs when the Calculate button is clicked
